@@ -1,6 +1,6 @@
 # Learn MongoDB
 
-The MangoDB doesn't use rows and columns. Instead, it stores data as documents that look like JSON objects.
+The MongoDB doesn't use rows and columns. Instead, it stores data as documents that look like JSON objects.
 
 ---
 
