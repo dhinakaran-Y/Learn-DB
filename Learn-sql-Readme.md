@@ -227,7 +227,35 @@ SELECT * FROM employee_table ORDER BY age ASC;
 SELECT * FROM employee_table ORDER BY age DESC;
 ```
 
- ---
+##### Foreign Key
+
+create a dependency table Hobbies
+
+```
+CREATE TABLE hobbies (
+    hobby_id INT AUTO_INCREMENT PRIMARY KEY,
+    employee_id INT,
+    hobby_name VARCHAR(50),
+    FOREIGN KEY (employee_id) REFERENCES employee_table(employee_id)
+);
+```
+![foreign key](/img/9.png);
+
+##### Inset Data inside hobbies table
+
+```
+INSERT INTO hobbies (employee_id, hobby_name)
+VALUES
+(1, 'volyball play'),
+(1, 'Gaming'),
+(1,"watching movies"),
+(2, 'Reading'),
+(5, 'Photography'),
+(5, "singing");
+
+```
+
+![foreign key](/img/10.png);
 
 
 
